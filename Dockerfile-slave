@@ -9,6 +9,6 @@ ENV PATH $JMETER_HOME/bin:$PATH
 USER root
 EXPOSE 1099 50000
 
-RUN ["chmod", "+x", "${JMETER_HOME}/bin/jmeter-server"]
+RUN ["sh", "-c", "chmod +x ${JMETER_HOME}/bin/jmeter-server"]
 ENTRYPOINT ["sh", "-c", "${JMETER_HOME}/bin/jmeter-server -Dserver.rmi.localport=50000 -Dserver_port=1099 -Jserver.rmi.ssl.disable=true"]
 
