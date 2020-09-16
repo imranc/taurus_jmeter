@@ -2,7 +2,7 @@ FROM blazemeter/taurus:latest
 MAINTAINER blazemeter
 
 ARG JMETER_VERSION=5.2.1
-ENV JMETER_HOME ~/.bzt/jmeter-taurus/$JMETER_VERSION
+ENV JMETER_HOME /root/.bzt/jmeter-taurus/$JMETER_VERSION
 
 ENV PATH $JMETER_HOME/bin:$PATH
 
