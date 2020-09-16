@@ -1,0 +1,4 @@
+FROM blazemeter/taurus:latest
+MAINTAINER blazemeter
+
+EXPOSE 60000
