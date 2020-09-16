@@ -6,6 +6,7 @@ ENV JMETER_HOME /root/.bzt/jmeter-taurus/$JMETER_VERSION
 
 ENV PATH $JMETER_HOME/bin:$PATH
 
+USER root
 EXPOSE 1099 50000
 
 ENTRYPOINT $JMETER_HOME/bin/jmeter-server \
