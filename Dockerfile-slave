@@ -10,10 +10,10 @@ USER root
 EXPOSE 1099 50000
 
 WORKDIR /tmp
-RUN wget -q https://jmeter-plugins.org/files/packages/bzm-random-csv-0.6.zip \
-&& unzip bzm-random-csv-0.6.zip \
-&& cp lib/ext/jmeter-plugins-random-csv-data-set-0.6.jar ${JMETER_HOME}/lib/ext/ \
-&& rm -rf bzm-random-csv-0.6.zip lib/
+RUN wget -q https://jmeter-plugins.org/files/packages/bzm-random-csv-0.7.zip \
+&& unzip bzm-random-csv-0.7.zip \
+&& cp lib/ext/jmeter-plugins-random-csv-data-set-0.7.jar ${JMETER_HOME}/lib/ext/ \
+&& rm -rf bzm-random-csv-0.7.zip lib/
 WORKDIR /bzt-configs
 
 RUN ["sh", "-c", "chmod +x ${JMETER_HOME}/bin/jmeter-server"]
